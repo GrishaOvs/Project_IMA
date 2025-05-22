@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 
 
+# ПРИвет
+
 def create_plot(VLP, IPR, Q):
     plt.plot(Q, [VLP.production(q) for q in Q], label='VLP')
     plt.plot(Q, [IPR.production(q) for q in Q], label='IPR')
